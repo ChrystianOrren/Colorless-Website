@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container">
+        <div class="main">
+            <img src="{% static 'images/COLORLESS.png'%}"/>
+
+
+            <div class="video-frame">
+                <iframe 
+                    class="video" 
+                    src="https://www.youtube.com/embed/4J1-HKvTdBQ?autoplay=1&mute=1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="info">
+                <h1>What is Colorless?</h1>
+                <h2>Colorless is a Turned-Based RPG that incorporates Time Attacks and Timed Defense. Emily was searching for a book that was said to be the key to creating beautiful art. She found that book and that book was Colorless. She was sucked into the book and as she tries to find a way out, she was tasked to help this world from becoming Colorless.</h2>
+                <h1>What Can you expect from this game?</h1>
+                <h2>In Colorless you will meet wacky characters, fight tough bosses, gain abilities, solve puzzles, complete sidequests, and get  stronger as you explore the world.</h2>
+                <h1>What does the Demo Cover?</h1>
+                <h2>The demo covers the first chapter of the game which is the Red Color Zone. It also includes most of the systems that the full release will have like: An Item System, A Cooking System, Skill Trees, Special attacks, Powers to change the world, and more! The full game will have multiple chapters and a prologue.</h2>
+                <h1>How can I support the game?</h1>
+                <h2>You can support the game by: Playing the demo, sharing the game with your friends, watching the devlogs on the youtube channel, do a one time donation on the donation page, or subscribing to the Ko-Fi for more exclusive content also located on the donation page.</h2>
+                <h1>When will the game be released?</h1>
+                <h2>Right now, no solid timeframe has been made. I am expecting to possibly release the full game by 2029. So many factors contribute  to shortening and elongating the development process. I still work and am unable to work on this game full time. I also use Fiverr to  get art for my game and each individual sprite can take weeks.</h2>
+                <h1>How Can I Learn More About this Game?</h1>
+                <h2>You can: Watch the devlogs, go to the about page, or subscribe to the Ko-Fi.</h2>
+                <h1>What Can I Play the Game On?</h1>
+                <h2>Currently you can play the demon on Windows PC. Eventually I intend to make the game available for: PC, Xbox, PS, Nintendo Consoles, and Phones.</h2>
+            </div>
+
+            <h1>Play the Demo Now!</h1>
+            <a class="button-74" role="button" href="https://drive.google.com/file/d/1Vj0kHGSMQvH8ncbv5mgeOMj5RRj1G5zs/view?usp=sharing" target="_blank" rel="noopener noreferrer">Play Demo!</a>
+        </div>
+        <div class="contact-info">
+            <h1>Contact Info:</h1>
+            <h2>Email: theofficalcolorlessgame@gmail.com</h2>
+            <h2>Youtube: <a href="https://www.youtube.com/@ADumbBye" target="_blank">ADumbBye</a></h2>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/donation.css' %}">
+    <script src="{% static 'js/donation.js' %}"></script>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container">
+        <div class="main">
+            <h1>Donations Page</h1>
+            <div class="info">
+                <h2>Your generous donation will play a crucial role in helping me continue to bring my game to life. As an indie developer, every contribution directly supports the development process, allowing me to focus on creating a more immersive and enjoyable experience for all players. Thank you for believing in my vision and for helping me make this dream a reality. Your support means the world to me!</h2>
+                <div class="donate" id="donate">
+                    <button class="button-74" id="donate" onclick="showDonate()">Donate</button>
+                </div>
+                <div class="don-div" id="don-div">
+                    <h1>You can donate through Paypal or Ko-fi</h1>
+                    <div class="money-div">
+                        <img class="paypal" src="{% static 'images/paypalicon.png'%}" onclick="goToPayPal()"/>
+                        <h1>@AdamBaj</h1>
+                    </div>
+                    <div class="money-div">
+                        <img class="kofi" src="{% static 'images/KofiIcon.png'%}" onclick="goToKofi()"/>
+                        <h1>@colorlessthegame</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

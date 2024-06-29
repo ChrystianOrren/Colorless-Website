@@ -1,0 +1,111 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5%;
+    background: #ffa633;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (min-width: 769px){  
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .navbar a {
+        position: relative;
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+    
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: .3s;
+    }
+    
+    .navbar a:hover::before {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+        background-image: url('../images/hamburger.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px; 
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        margin-right: 50px;
+    }
+    
+    .hamburger-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 100px - 16px);
+        background-color: #ffa633;
+        text-decoration: none;
+    }
+    
+    .hamburger-menu.show {
+        display: block;
+    }
+    
+    .hamburger-menu a {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-decoration: none;
+        padding-left: 100px;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .hamburger-menu a:hover {
+        background-color: #ffc266;
+    }
+
+}
+
+.image{
+    width: 8%;
+    height: auto;
+    cursor: pointer;
+}

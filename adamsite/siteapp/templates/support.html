@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Support</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/support.css' %}">
+    <script src="{% static 'js/support.js' %}"></script>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container">
+        <div class="main">
+            <div class="info">
+                <h1>Help me improve my game.</h1>
+                <h2>If you encounter any bugs while testing the demo or would like to provide feedback, please enter your information below, and I will reach out to you.</h2>
+            </div>
+
+            <div class="bug-report">
+                <form class="bug-report-form" action="" method="POST" id="bug_report_form" autocomplete="off">
+                    <h1>Support Form</h1>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <p class="suc-txt" id="suc-txt">Thank you! I will get back to you.</p>
+                    <button class="button-74" type="submit" onclick="submitClick(event)">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

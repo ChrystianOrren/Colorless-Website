@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+</head>
+<body>
+    <header class="header" id="header">
+        <!-- <a href="/" class="logo" onclick="diffPageLink(event)">Colorless</a> -->
+        <img src="{% static 'images/COLORLESS.png'%}" class="image" href="/" onclick="diffPageLink(event)"/>
+
+        <button class="hamburger-button" onclick="toggleMenu()" id="hamburger-button"></button>
+        <div class="hamburger-menu" id ="hamburger-menu">
+            <a href="/" onclick="toggleMenu(event)">Home</a>
+            <a href="/about" onclick="toggleMenu(event)">About</a>
+            <a href="/support" onclick="toggleMenu(event)">Support</a>
+            <a href="/donation" onclick="toggleMenu(event)">Donation</a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="/" onclick="diffPageLink(event)">Home</a>
+            <a href="/about" onclick="diffPageLink(event)">About</a>
+            <a href="/support" onclick="diffPageLink(event)">Support</a>
+            <a href="/donation" onclick="diffPageLink(event)">Donation</a>
+        </nav>
+
+    </header>
+
+    <script src="{% static 'js/navbar.js' %}"></script>
+    
+</body>
+</html>
