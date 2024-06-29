@@ -1,0 +1,1 @@
+web gunicorn adamsite.wsgi.application --log-file -
